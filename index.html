@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Générateur de calcul</title>
+    
 </head>
 <body>
     <header>
@@ -13,15 +14,15 @@
         <h2>Indiquer le résultat du calcul au dixième près (1 chiffre après la virgule)</h2>
     </header>
     <main>
-        <p></p>   <!--affichera le calcul -->
-        <input type="number">
+        <p id="formule"></p>   <!--affichera le calcul -->
+        <input type="number" id="reponseUtilisateur">
         <p></p>      <!--indication -->
-        <button>soumettre</button>
-        <button>recommencer</button>    
+        <button onclick="tentative()">soumettre</button>
+        <button onclick="recommencer()">recommencer</button>    
     </main>
     <footer>
-        <p>Test avec typescript</p>
+        <p id="indication">Test avec typescript</p>
     </footer>    
-    
+    <script src="main.js"></script>    
 </body>
 </html>
